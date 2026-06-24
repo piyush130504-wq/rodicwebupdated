@@ -173,8 +173,8 @@ function Nav({ onNav }) {
     <>
       <nav className="nav" data-testid="main-nav">
         <div className="nav-logo" data-testid="nav-logo" onClick={() => go("home")} style={{ cursor: "pointer" }}>
-          Rodic<span className="x">×</span>NASSCOM
-        </div>
+  <a href="https://www.rodicconsultants.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }} onClick={(e) => e.stopPropagation()}>Rodic</a><span className="x">×</span>NASSCOM
+</div>
         <div className="nav-links">
           {navItems.map((n) => (
             <span
@@ -640,7 +640,7 @@ function Footer({ onNav }) {
     <footer className="footer" data-testid="footer">
       <div className="footer-inner">
         <div>
-          <div className="fbrand">Rodic<span className="x">×</span>NASSCOM</div>
+          <div className="fbrand"><a href="https://www.rodicconsultants.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Rodic</a><span className="x">×</span>NASSCOM</div>
           <p className="ftag">AI Innovation Partnership for Public Infrastructure & Strategic Sectors.</p>
         </div>
         <div>
